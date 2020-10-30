@@ -1,11 +1,11 @@
-def add(l1, l2):
+def add(*arrays):
 
     result = []
     
-    for i in range(0, len(l1)):
-        innerRes = []
-        result.append(innerRes)
-        for j in range(0, len(l1)):
-            innerRes.append(l1[i][j] + l2[i][j])
+    for i in range (0, len(arrays)):
+        innerArray = []
+        result.append(innerArray)
+        for j in range (0, len(arrays[i])):
+            arrays[i][j] + arrays[i + 1][j]
 
     return result
